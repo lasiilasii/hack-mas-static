@@ -60,7 +60,7 @@ h2 {
 }
 
 section {
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 .main {
@@ -69,10 +69,6 @@ section {
   display: flex;
   align-items: center;
   min-height: 150px;
-}
-
-.main strong {
-  font-size: 20px;
 }
 
 .main div:first-child {
@@ -86,10 +82,6 @@ section {
 .main div:last-child {
   flex: 2;
   padding: 20px;
-}
-
-.main img {
-  width: 100%;
 }
 
 .info {
