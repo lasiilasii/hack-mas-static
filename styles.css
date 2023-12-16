@@ -1,15 +1,30 @@
 @font-face {
   font-family: 'OpenDyslexic';
-  font-style: normal;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@latest/latin-400-normal.woff) format('woff');
+  src: url('fonts/OpenDyslexic-Regular.otf');
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('fonts/Blogger Sans-Medium.otf');
+}
+
+:root {
+  --color-white: #FAFAFA;
+  --color-grey: #676C75;
+  --color-black: #151515;
+  --color-pink: #CD3F94;
+  --color-violet: #9049A4;
+  --color-blue: #679ED9;
+  --color-yellow: #ECC94A;
+  --color-green: #D1D99D;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'OpenDyslexic';
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: Geneva, Verdana, sans-serif;
+  color: var(--color-white);
+  text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black);
 }
 
 body {
@@ -17,7 +32,22 @@ body {
   max-width: 1900px;
   background: url(assets/magical-dust.png) no-repeat;
   height: 100%;
-  font-size: large;
+}
+
+body * {
+  font-family: 'BloggerSans';
+  font-size: 26px;
+  letter-spacing: 0.040em;
+}
+
+body p.text {
+  line-height: 36px;
+}
+
+h1,
+h2 {
+  font-family: 'OpenDyslexic';
+  letter-spacing: -0.025em;
 }
 
 h1 {
@@ -49,7 +79,8 @@ section {
   flex: 1;
   min-width: "300px";
   max-width: "500px";
-  margin-right: 4vw;;
+  margin-right: 4vw;
+  ;
 }
 
 .main div:last-child {
@@ -61,21 +92,33 @@ section {
   width: 100%;
 }
 
-.info{
-  font-size: 13px;
+.info {
+  font-size: 18px;
 }
 
 .footer {
-  height: 3vh;
-  background-color: #1e1719;
+  height: 1.90vh;
+  background-color: var(--color-black);
+  color: var(--color-violet);
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: var(--color-white);
   text-align: center;
   margin-left: 0;
+}
+
+.footer * {
   font-size: 12px;
+}
+
+.footer p {
+  color: var(--color-violet);
+}
+
+.footer a {
+  color: var(--color-pink);
 }
 
 @media screen and (max-width: 793px) {
