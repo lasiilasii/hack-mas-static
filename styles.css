@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@latest/latin-400-normal.woff) format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'OpenDyslexic';
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+  margin: auto;
+  max-width: 1900px;
+  background: url(assets/magical-dust.png) no-repeat;
+  height: 100%;
+  font-size: large;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+section {
+  margin-top: 15vh;
+}
+
+.main {
+  margin-left: 15vw;
+  margin-right: 10vw;
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+}
+
+.main strong {
+  font-size: 20px;
+}
+
+.main div:first-child {
+  flex: 1;
+  min-width: "300px";
+  max-width: "500px";
+  margin-right: 4vw;;
+}
+
+.main div:last-child {
+  flex: 2;
+  padding: 20px;
+}
+
+.main img {
+  width: 100%;
+}
+
+.info{
+  font-size: 13px;
+}
+
+.footer {
+  height: 3vh;
+  background-color: #1e1719;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-left: 0;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 793px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .header {
+    height: 40vh;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .projects ul li {
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+}
