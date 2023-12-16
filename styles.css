@@ -71,6 +71,10 @@ section {
   min-height: 150px;
 }
 
+.main img {
+  width: 100%;
+}
+
 .main div:first-child {
   flex: 1;
   min-width: "300px";
