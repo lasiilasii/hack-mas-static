@@ -95,7 +95,7 @@ section {
 }
 
 .footer {
-  height: 16px;
+  height: 21px;
   background-color: var(--color-black);
   color: var(--color-violet);
   position: fixed;
@@ -108,7 +108,7 @@ section {
 }
 
 .footer * {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .footer p {
