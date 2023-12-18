@@ -12,6 +12,7 @@
   --color-white: #FAFAFA;
   --color-grey: #676C75;
   --color-black: #151515;
+  --color-black-transparent: #15151590;
   --color-pink: #CD3F94;
   --color-violet: #9049A4;
   --color-blue: #679ED9;
@@ -60,7 +61,7 @@ h2 {
 }
 
 section {
-  margin-top: 20vh;
+  margin-top: 19vh;
 }
 
 .main {
@@ -80,12 +81,13 @@ section {
   min-width: "300px";
   max-width: "500px";
   margin-right: 4vw;
-  ;
 }
 
 .main div:last-child {
   flex: 2;
   padding: 20px;
+  background-color: var(--color-black-transparent);
+  border-radius: 40px 200px 40px 40px;
 }
 
 .info {
@@ -93,7 +95,7 @@ section {
 }
 
 .footer {
-  height: 1.90vh;
+  height: 16px;
   background-color: var(--color-black);
   color: var(--color-violet);
   position: fixed;
@@ -138,6 +140,5 @@ section {
 
   .footer {
     position: relative;
-    height: 4vh;
   }
 }
