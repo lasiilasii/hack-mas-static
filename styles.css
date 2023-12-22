@@ -145,4 +145,8 @@ section {
   body {
 	background: url(assets/magical-dust-portrait.jpg) no-repeat;
   }
+  
+  .main div:last-child {
+    border-radius: 40px 100px 40px 40px;
+  }
 }
