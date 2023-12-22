@@ -141,4 +141,8 @@ section {
   .footer {
     position: relative;
   }
+  
+  body {
+	background: url(assets/magical-dust-portrait.jpg) no-repeat;
+  }
 }
