@@ -119,6 +119,14 @@ section {
   color: var(--color-pink);
 }
 
+/* 4k/greater than full hd */
+@media screen and (min-width: 1921px) {
+  body {
+    background: url(assets/magical-dust-4k.jpg) no-repeat;
+  }
+}
+
+/* mobile */
 @media screen and (max-width: 793px) {
   h1 {
     font-size: 30px;
@@ -141,11 +149,11 @@ section {
   .footer {
     position: relative;
   }
-  
+
   body {
-	background: url(assets/magical-dust-portrait.jpg) no-repeat;
+    background: url(assets/magical-dust-portrait.jpg) no-repeat;
   }
-  
+
   .main div:last-child {
     border-radius: 40px 100px 40px 40px;
   }
