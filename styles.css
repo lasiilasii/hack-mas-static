@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'BloggerSans';
-  src: url('fonts/Blogger Sans-Medium.otf');
+  font-family: 'VDS';
+  src: url('fonts/VDS_Bold_New.ttf') format('truetype');
 }
 
 :root {
@@ -23,7 +23,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Geneva, Verdana, sans-serif;
   color: var(--color-white);
   text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black);
 }
@@ -36,13 +35,17 @@ body {
 }
 
 body * {
-  font-family: 'BloggerSans';
-  font-size: 26px;
-  letter-spacing: 0.040em;
+  font-family: 'VDS';
+  font-size: 24px;
+  letter-spacing: 0.065em;
 }
 
 body p.text {
   line-height: 36px;
+}
+
+body strong {
+  font-family: Arial;
 }
 
 h1,
@@ -108,7 +111,7 @@ section {
 }
 
 .footer * {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer p {
