@@ -21,7 +21,6 @@
 }
 
 * {
-  padding: 0;
   margin: 0;
   color: var(--color-white);
   text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black);
@@ -36,12 +35,20 @@ body {
 
 body * {
   font-family: 'VDS';
-  font-size: 24px;
   letter-spacing: 0.065em;
 }
 
+#body * {
+  font-size: 32px;
+}
+
 body p.text {
-  line-height: 36px;
+  line-height: 38px;
+  font-size: 30px;;
+}
+
+body p.lightningtalksubtitle {
+  font-size: 28px;
 }
 
 body strong {
@@ -55,21 +62,19 @@ h2 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 
 h2 {
   font-weight: normal;
-  font-size: 30px;
-}
-
-section {
-  margin-top: 19vh;
+  font-size: 38px;
 }
 
 .main {
-  margin-left: 15vw;
-  margin-right: 10vw;
+  margin-top: 19vh;
+
+  margin-left: 5vw;
+  margin-right: 5vw;
   display: flex;
   align-items: center;
   min-height: 150px;
@@ -81,28 +86,43 @@ section {
 
 .main div:first-child {
   flex: 1;
-  min-width: "300px";
-  max-width: "500px";
+  min-width: 45vh;
   margin-right: 4vw;
+  font-size: 28px;
+}
+
+.main div:first-child.l {
+  flex: 1;
+  min-width: 45vh;
+  margin-right: 4vw;
+  font-size: 28px;
 }
 
 .main div:last-child {
   flex: 2;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 34px;
   background-color: var(--color-black-transparent);
 }
 
 .main div.lightningtalk {
-  margin-top: 3.47vh;
+  margin-top: 6.8vh;
   border-radius: 40px 40px 40px 200px;
   text-align: right;
+  margin-left: 4vh;
+  padding-top: 0;
 }
 
 .main div.content {
   flex: 2;
-  padding: 20px;
   background-color: var(--color-black-transparent);
   border-radius: 40px 200px 40px 40px;
+}
+
+#main div.content {
+  padding: 20px;
 }
 
 .info {
@@ -121,6 +141,17 @@ section {
   text-align: center;
   margin-left: 0;
 }
+
+.qrcode img {
+  height: 177px;
+  position: fixed;
+  left: 30px;
+  bottom: 50px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+#footer img {width:100%;}
 
 .footer * {
   font-size: 14px;
