@@ -159,5 +159,6 @@ section {
 
   .main div:last-child {
     border-radius: 40px 100px 40px 40px;
+    margin-top: 9vh;
   }
 }
